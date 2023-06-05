@@ -1,7 +1,15 @@
 * {
     margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    transition: 0.5s;
 }
-
+body {
+    height: 100vh;
+    width: 100%;
+    font-family: 'Montserrat', sans-serif;
+    /* Habilitar el desplazamiento suave */
+  }
 header {
     background-color: #bbbbbb;
     padding: 20px 0;
@@ -40,8 +48,11 @@ nav a:hover {
 }
 /* a */
 .principal{
-    background-color: #CCCCCC;
     padding: 20px;
+}
+.principal p{
+    margin: 0 0 1em;
+    padding: 10px;
 }
 #banner{
     width: 100%;
@@ -52,6 +63,8 @@ nav a:hover {
 }
 .titulo-centralizado{
     text-align: center;
+    font-size: 2em;
+    margin: 0 0 1em;
 }
 
 p {
@@ -83,4 +96,14 @@ em strong {
     vertical-align: top;
     width: 20%;
     margin-right: 15%;
+}
+.utencilios{
+    width: 120px;
+    float: left;
+}
+.mapa{
+    padding: 3em 0;
+}
+.mapa p{
+    margin: 0 0 2em;
 }

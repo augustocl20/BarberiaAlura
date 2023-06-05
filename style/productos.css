@@ -1,5 +1,14 @@
 * {
     margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    transition: 0.5s;
+}
+
+body {
+    height: 100vh;
+    width: 100%;
+    /* Habilitar el desplazamiento suave */
 }
 
 header {
@@ -8,7 +17,7 @@ header {
 }
 
 .caja {
-    width: 940px;
+    width: 100%;
     position: relative;
     margin: 0 auto;
 }
@@ -36,7 +45,12 @@ nav a:hover {
     padding: 10px 5px 10px 5px;
     background-color: white;
     border: 2px solid black;
-    border-radius: 10px;;
+    border-radius: 10px;
+    ;
+}
+
+.productos li img {
+    width: 100%;
 }
 
 .productos {
@@ -45,7 +59,7 @@ nav a:hover {
     padding: 50px;
 }
 
-.productos h2{
+.productos h2 {
     font-size: 30px;
     font-weight: bold;
 }
@@ -62,31 +76,106 @@ nav a:hover {
     border-radius: 10px 25px 40px 50px;
 }
 
-.productos li:hover{
+.productos li:hover {
     border-color: yellow;
 }
-.productos li:hover h2{
-    font-size: 35px;;
+
+.productos li:hover h2 {
+    font-size: 35px;
+    ;
 }
 
-.productos li:active{
+.productos li:active {
     border-color: aqua;
 }
 
-.descripcion-producto{
+.descripcion-producto {
     font-size: 18px;
 }
-.precio-producto{
+
+.precio-producto {
     font-size: 20px;
     font-weight: bold;
     margin-top: 10px;
 }
 
-footer{
+footer {
     text-align: center;
     background: url(/Parte_1/productos/bg.jpg);
     padding: 40px;
 }
-footer p{
+
+footer p {
     color: white;
+}
+
+.copyrigth {
+    color: #FFFFFF;
+    font-size: 13px;
+    margin: 20px;
+}
+
+main {
+    width: 940px;
+    margin: 0 auto;
+}
+
+form {
+    margin: 40px 0;
+}
+
+form label,
+form legend {
+    display: block;
+    font-size: 20px;
+    margin: 0 0 10px;
+}
+
+.input-padron {
+    display: block;
+    margin: 0 0 20px;
+    padding: 10px 25px;
+    width: 50%;
+}
+
+.checkbox {
+    margin: 20px 0;
+}
+
+fieldset {
+    border: none;
+    padding: 0;
+    margin: 0;
+}
+
+.enviar{
+    width: 40%;
+    padding: 15px 0;
+    font-size: 18px;
+    font-weight: bold;
+    color: white;
+    background-color: orange;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: 1s all;
+}
+.enviar:hover{
+    background-color: black;
+    transform: scale(1.2);
+}
+
+table{
+    border-collapse: collapse; /* hace que los bordes colapsen en vez de verse separados*/
+    border: 1px solid black;
+    margin: 40px 40px;
+}
+thead{
+    background-color: gray;
+    color: white;
+    font-weight: bold;
+}
+td, th{
+    border: 1px solid black;
+    padding: 8px 15px;
 }
