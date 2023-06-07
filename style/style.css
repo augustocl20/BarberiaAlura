@@ -51,7 +51,6 @@ nav a:hover {
 /* a */
 .principal{
     padding: 5em 20em;
-
 }
 .principal p{
     margin: 0 0 1em 0;
@@ -181,4 +180,26 @@ footer p {
 .main{
     width: 940px;
     margin:  0 auto
+}
+
+@media screen and (max-width: 480px) {
+    h1{
+        text-align: center;
+    }
+    nav{
+        position: static;
+    }
+    .caja, .principal, .mapa-contenido, .contenido-diferenciales, .video{
+        width: auto;
+    }
+    .principal{
+        padding: 1em 1em;
+    }
+
+    iframe{
+        padding-top: 10%;
+        padding-left: 14%;
+        width: auto;
+    }
+
 }
